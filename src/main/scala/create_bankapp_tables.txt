@@ -1,0 +1,43 @@
+DROP TABLE IF EXISTS bank_account;
+CREATE TABLE bank_account (
+account_id int NOT NULL primary key,
+first_name varchar(255),
+last_name varchar(255),
+checking_id int NOT NULL,
+savings_id int NOT NULL,
+PRIMARY KEY (account_id),
+constraint foreign key (checking_id)
+	references checking(checking_id),
+constraint foreign key (savings_id)
+	references savings(savings_id)
+);
+
+
+DROP TABLE IF EXISTS checking;
+CREATE TABLE checking (
+checking_id int NOT NULL,
+checking_id int,
+PRIMARY KEY (checking_id)
+);
+
+DROP TABLE IF EXISTS savings;
+CREATE TABLE savings (
+savings_id int NOT NULL,
+savings_balance int,
+PRIMARY KEY (savings_id)
+);
+
+-- add_remove 1 for add
+-- checking_savings 1 for checking
+DROP TABLE IF EXISTS deposit_withdrawal;
+CREATE TABLE deposit_withdrawal (
+transaction_id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+account_id int,
+add_remove bool,-- add_remove 1 is add, 0 is remove
+checking_savings bool,-- checking_savings 1 is checking 0 is savings
+amount int,
+date timestamp not null default now(),
+PRIMARY KEY (transaction_id),
+constraint foreign key (account_id)
+	references bank_account(account_id)
+);

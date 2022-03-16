@@ -1,0 +1,4 @@
+[debug] [scaladbdemo-copy-2--test] Classpath dependencies List()
+[debug] [scaladbdemo-copy-2--test] Dependencies from configurations List(scaladbdemo-copy-2-)
+[debug] Bloop wrote the configuration of project 'scaladbdemo-copy-2--test' to 'C:\Users\William Terry\Desktop\BigDataOctober2021\ScalaDBDemo - Copy (2)\.bloop\scaladbdemo-copy-2--test.json'
+[success] Generated .bloop\scaladbdemo-copy-2--test.json

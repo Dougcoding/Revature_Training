@@ -1,0 +1,102 @@
+{
+  "banking_account" :[{
+    "account_id": 1,
+    "first_name": "douglas",
+    "last_name": "lam",
+    "checking_id": 101,
+    "savings_id": 201
+  },
+  {
+    "account_id": 2,
+    "first_name": "jack",
+    "last_name": "bauer",
+    "checking_id": 102,
+    "savings_id": 202
+  },
+  {
+    "account_id": 3,
+    "first_name": "amy",
+    "last_name": "arbeiter",
+    "checking_id": 103,
+    "savings_id": 203
+  },
+  {
+    "account_id": 4,
+    "first_name": "jon",
+    "last_name": "snoq",
+    "checking_id": 104,
+    "savings_id": 204
+  },
+  {
+    "account_id": 5,
+    "first_name": "tom",
+    "last_name": "cruise",
+    "checking_id": 105,
+    "savings_id": 205
+  }],
+  "deposit_withdrawal": [{
+    "account_id":1,
+    "add_remove":1,
+    "checking_savings":1,
+    "amount":700},
+    {
+      "account_id":2,
+      "add_remove":1,
+      "checking_savings":1,
+      "amount":2500},
+    {
+      "account_id":3,
+      "add_remove":1,
+      "checking_savings":1,
+      "amount":375},
+    {
+      "account_id":4,
+      "add_remove":1,
+      "checking_savings":1,
+      "amount":200},
+    {
+      "account_id":5,
+      "add_remove":1,
+      "checking_savings":1,
+      "amount":12500}],
+  "checking": [{
+    "checking_id":101,
+    "checking_balance":3500
+  },
+    {
+      "checking_id":102,
+      "checking_balance":1650
+    },
+    {
+      "checking_id":103,
+      "checking_balance":1900
+    },
+    {
+      "checking_id":104,
+      "checking_balance":3200
+    },
+    {
+      "checking_id":105,
+      "checking_balance":8200
+    }],
+  "savings":[{
+    "savings_id":201,
+    "savings_balance":12000
+    },
+    {
+      "savings_id":202,
+      "savings_balance":5000
+    },
+    {
+      "savings_id":203,
+      "savings_balance":-200
+    },
+    {
+      "savings_id":204,
+      "savings_balance":6500
+    },
+    {
+      "savings_id":205,
+      "savings_balance":1400
+    }]
+}
